@@ -1,0 +1,347 @@
+﻿*{
+    margin:0;
+    padding: 0;
+    border: 0;  
+}
+
+h2{
+    font-family:'Raleway', sans-serif;
+    font-size: 1.8em;
+}
+
+:root{
+    --black_alpha_16: rgba(221, 121, 28, 0.16);
+    --black_alpha_40: rgba(221, 121, 28, 0.48);
+    --btn-color: #c19d56;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    position: relative;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    /* justify-content: right; */
+    width: 100%;
+    background-color: seashell;
+    height: 50px;
+}
+
+h1{
+    color: rgb(255 245 238);
+    margin-top: 0;
+    font-size: 5em;
+
+}
+
+.lorem_header{
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 0.5rem;
+    
+}
+
+.image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(images/1.jpg);
+    background-image: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat; /* Фон без повторения */
+}
+
+.navigation{
+    display: flex;
+    font-size: 18pt;
+}
+
+.main-menu{
+    position: absolute;
+    margin: 0;
+    top: 5px; 
+    right: 10px;
+    gap: 1rem;
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+}
+
+ .icon{
+    /* position: absolute; */
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 0.5rem;
+} 
+
+.text-icon{
+    padding-left: 0.5rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.cover{
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+     font-family: 'Oswald', sans-serif;    
+}
+
+.lorem_header{
+    color: rgb(255 245 238);
+    font-size: 25;
+}
+a {
+    font-family: 'Oswald', sans-serif;
+    color: black; /* Цвет обычной ссылки */ 
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+}
+
+a:visited {
+    color: black; /* Цвет обычной ссылки */ 
+} 
+
+a:hover {
+    color: #c19d56; /* Цвет ссылки при наведении на нее курсора мыши */  
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+}
+
+.card-container{
+    display: flex; 
+    gap: 1rem;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    height: 320px;
+    width: 230px;
+    background-color: white;
+    box-shadow: 0 2px 20px var(--black_alpha_16);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem 0;
+    gap: 1rem;
+    border-radius: 5%;
+    transition: box-shadow .5s;
+
+}
+
+.card:hover{
+    box-shadow: 0 5px 35px var(--black_alpha_40);
+}
+.card img{
+    display: flex;
+    width: 80%;
+    justify-items: center;
+    border-radius: 50%;
+}
+
+.card-btn, .btn{
+    font-family: 'Oswald', sans-serif;
+    border: 1px solid var(--btn-color);
+    border-radius: 5px;
+    color: var(--btn-color);
+    background-color: white;
+    width: 80%;
+    height: 2rem;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.card-btn:hover, .btn:hover{
+    background-color: var(--btn-color);
+    color: white;
+}
+
+.aboutUs{
+    text-align: center;
+    background: linear-gradient(rgba(253.5, 250, 248, 0.829), rgba(253, 249, 246, 0.829));
+}
+
+
+.subscripts {
+    display: flex;
+    padding-top: 4rem;
+    text-align: center;
+    justify-content: center;
+    background: linear-gradient(rgba(255, 245,238, 0.829), rgba(254, 247, 242, 0.829));
+}
+
+.aboutProduct{
+    display: flex;
+    padding-top: 4rem;
+    text-align: center;
+    justify-content: center;
+    background: linear-gradient(rgba(255, 245,238, 0.829), rgba(254, 247, 242, 0.829));
+}
+
+.text-container{
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem; 
+    text-align: justify;
+    width: 1000px;
+    font-size: 1.5em; 
+    font-family: 'Nunito Sans', sans-serif; 
+}
+
+.img-container{
+    padding-left: 1.5rem;
+    display: flex;  
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+.aboutProduct img{
+    padding-top: 1rem; 
+}
+
+.pic{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    
+}
+.project-features{
+    padding-top: 4rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(rgba(254, 247,242, 0.829), rgba(253.5, 250, 248, 0.829));
+}
+
+.contacts{
+    padding-top:3rem ;
+    text-align: center;
+    background: linear-gradient(rgba(253, 249,246, 0.829), rgba(252, 251, 250, 0.829));
+}
+
+.aboutUs h2{
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+
+.btn{
+width: 5rem;
+pad: 0 2rem;
+}
+
+.map{
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.address{ 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.inner{
+    padding-bottom: 1.5rem ;
+}
+p {
+    padding-top: 1rem;
+}
+
+ .list{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: auto;
+    width: 1200px;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+
+    background-color: rgba(250, 249, 255, 0.822);
+    box-shadow: 0 2px 20px var(--black_alpha_16);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+    border-radius: 2%;
+    transition: box-shadow .5s;
+} 
+
+ul,ol,dl,p {
+    font-size: 1.5rem;
+  }
+  
+  li, p {
+    line-height: 1.5;
+    color: black;
+  }
+
+
+/* arrow-6 */
+
+.arrow-6 {
+    margin:20px;
+}
+
+.arrow-6 svg {
+    width: 100px;
+    height: auto;
+    margin: 0 2rem;
+    cursor: pointer;
+    overflow: visible;
+}
+.arrow-6 svg polygon, 
+.arrow-6 svg path {
+    transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1);
+    fill: #d6b65cb9;
+}
+.arrow-6 svg:hover polygon, 
+.arrow-6 svg:hover path {
+    transition: all 1s cubic-bezier(0.2, 1, 0.3, 1);
+    fill: rgba(0, 0, 0, 0.575);
+}
+.arrow-6 svg:hover .arrow-6-pl {
+    animation: arrow-6-anim 1s cubic-bezier(0.2, 1, 0.3, 1) infinite;
+}
+.arrow-6 svg:hover .arrow-6-pl-fixed {
+    animation: arrow-6-fixed-anim 1s cubic-bezier(0.2, 1, 0.3, 1) infinite;
+}
+ 
+@keyframes arrow-6-anim {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    5% {
+        transform: translateX(-0.1rem);
+    }
+    100% {
+        transform: translateX(1rem);
+        opacity: 0;
+    }
+}
+@keyframes arrow-6-fixed-anim {
+    5% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 1;
+    }
+}
